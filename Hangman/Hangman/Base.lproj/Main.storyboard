@@ -40,7 +40,7 @@
                                 <rect key="frame" x="64" y="339" width="296" height="185"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vAl-9I-gSg">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Misses:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vAl-9I-gSg">
                                 <rect key="frame" x="156" y="547" width="111" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -62,6 +62,7 @@
                         <outlet property="displayHangPicture" destination="vHi-bv-yIU" id="A3D-iJ-5MX"/>
                         <outlet property="displayWord" destination="4nB-iw-kRR" id="Uax-0b-7fK"/>
                         <outlet property="guessedLetterTextField" destination="FUQ-E6-8Zw" id="9iM-it-ZgW"/>
+                        <outlet property="missLabel" destination="vAl-9I-gSg" id="uPY-dy-bYo"/>
                         <outlet property="mysteryInputTextField" destination="ygV-xw-Cyv" id="Fbe-Tg-zK5"/>
                     </connections>
                 </viewController>

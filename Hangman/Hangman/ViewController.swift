@@ -19,8 +19,11 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var displayHangPicture: UIImageView!
     
+    
+    @IBOutlet weak var missLabel: UILabel!
+    
     var mysteryWordArray = ""
-    var playerIsPlaying = false
+    
     
     var hiddenWord:[String] = []
     var stringHiddenWord = ""
@@ -34,7 +37,8 @@ class ViewController: UIViewController {
         guessedLetterTextField.delegate = self
         mysteryInputTextField.isSecureTextEntry = true
         displayWord.text = "Let's Begin!"
-        playerIsPlaying = false
+        missLabel.text = "Misses:"
+        
     }
     
     
@@ -137,7 +141,7 @@ extension ViewController: UITextFieldDelegate {
 //                    }
 //        }
 //    }
-        displayWord.text = hiddenWord.description
+        displayWord.text = hiddenWord.joined(separator: "")
             
             print(mysteryWordIndex)
             print(stringHiddenWord)
@@ -146,7 +150,7 @@ extension ViewController: UITextFieldDelegate {
     
     func playerGetsHanged() {
         misses += 1
-        
+        missLabel.text = "Misses:\(misses)"
         switch misses {
         case 1:displayHangPicture.image = #imageLiteral(resourceName: "hang1")
         case 2:displayHangPicture.image = #imageLiteral(resourceName: "hang2")
